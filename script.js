@@ -186,3 +186,30 @@ window.addEventListener("scroll", () => {
     }
 
 });
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const myEmail = "eisak5214@gmail.com";
+
+        const body =
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n\n" +
+            "Message:\n" + message;
+
+        const gmailURL =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "&to=" + encodeURIComponent(myEmail) +
+            "&su=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+
+        window.location.href = gmailURL;
+    });
+}
