@@ -186,10 +186,14 @@ window.addEventListener("scroll", () => {
     }
 
 });
+// ================= CONTACT FORM =================
+
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
+
     contactForm.addEventListener("submit", function (event) {
+
         event.preventDefault();
 
         const name = document.getElementById("name").value;
@@ -211,5 +215,7 @@ if (contactForm) {
             "&body=" + encodeURIComponent(body);
 
         window.location.href = gmailURL;
+
     });
+
 }

@@ -549,41 +549,42 @@
                 </div>
 
 
-                <form class="contact-form reveal"
-                action="mail.to:eisak5214@gmail.com" 
-                method="post" 
-                enctype="text/plain">
+  <form class="contact-form reveal" id="contactForm">
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        required
-                    >
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+    >
 
-                    <input
-                        type="email"
-                        placeholder="Your Email"
-                        required
-                    >
+    <input
+        type="email"
+        id="email"
+        placeholder="Your Email"
+        required
+    >
 
-                    <input
-                        type="text"
-                        placeholder="Subject"
-                        required
-                    >
+    <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required
+    >
 
-                    <textarea
-                        rows="6"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
+    <textarea
+        id="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-                    <button type="submit" class="btn primary-btn">
-                        Send Message
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+    <button type="submit" class="btn primary-btn">
+        Send Message
+        <i class="fas fa-paper-plane"></i>
+    </button>
 
-                </form>
+</form>
 
             </div>
 
