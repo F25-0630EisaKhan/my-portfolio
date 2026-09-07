@@ -909,3 +909,20 @@ footer {
         transform: scale(0.85);
     }
 }
+/* Remove unwanted light outline/glow from buttons */
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn:focus-visible {
+    outline: none !important;
+}
+.btn {
+    border: none !important;
+    -webkit-tap-highlight-color: transparent;
+}

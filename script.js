@@ -201,20 +201,24 @@ if (contactForm) {
         const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
 
+        // YOUR EMAIL
         const myEmail = "eisak5214@gmail.com";
 
+        // Email body
         const body =
             "Name: " + name + "\n" +
             "Email: " + email + "\n\n" +
             "Message:\n" + message;
 
+        // Gmail Compose
         const gmailURL =
-            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "https://mail.google.com/mail/u/0/?view=cm&fs=1" +
             "&to=" + encodeURIComponent(myEmail) +
             "&su=" + encodeURIComponent(subject) +
             "&body=" + encodeURIComponent(body);
 
-        window.location.href = gmailURL;
+        // Open Gmail Compose
+        window.open(gmailURL, "_blank");
 
     });
 
